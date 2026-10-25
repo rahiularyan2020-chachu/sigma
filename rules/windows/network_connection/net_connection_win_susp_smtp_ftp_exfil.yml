@@ -1,4 +1,4 @@
-﻿title: Suspicious SMTP/FTP Exfiltration
+title: Suspicious SMTP/FTP Exfiltration
 id: 3cc63bef-15db-4c57-81e9-1785de00f722
 status: experimental
 description: Detects outbound network connections to common exfiltration ports (SMTP/FTP) excluding known email clients.
