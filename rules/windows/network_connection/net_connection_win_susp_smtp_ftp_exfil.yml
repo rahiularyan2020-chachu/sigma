@@ -21,12 +21,16 @@ detection:
             - 2525
             - 20
             - 21
-    filter_main_email_clients:
+    filter_main_legitimate_clients:
         Image|endswith:
             - '\outlook.exe'
             - '\thunderbird.exe'
             - '\HxTsr.exe'
-    condition: selection and not filter_main_email_clients
+            - '\filezilla.exe'
+            - '\winscp.exe'
+            - '\coreftp.exe' 
+    condition: selection and not filter_main_legitimate_clients
 falsepositives:
     - Legitimate email or FTP clients not in the filter list
 level: medium
+                                                                                                                                                           
